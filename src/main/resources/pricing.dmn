@@ -20,25 +20,25 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_4D44AFAE-5B82-4A8D-933C-A8C1D8407F20" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_D7EA9E51-5412-4EB5-A7FF-28F9AC3297A9">
-        <dmn:inputExpression id="_43CDF013-DD18-4AE0-A855-839487C20C13" typeRef="number">
+        <dmn:inputExpression id="_7D032169-4843-4A28-8DEB-DFD81745BD5F" typeRef="number">
           <dmn:text>Age</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_0D2391DF-5CCC-4815-A8A3-11AF4060588C">
-        <dmn:inputExpression id="_618C83B8-D5BF-4FD4-B5A3-10B35561D5E3" typeRef="boolean">
+        <dmn:inputExpression id="_25838CA4-2FD2-4A6F-B200-F34C7F18F26A" typeRef="boolean">
           <dmn:text>Previous incidents?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_9FB09304-6F24-4151-90DF-BF674341ED69"/>
       <dmn:annotation name="comments"/>
       <dmn:rule id="_6B750674-C470-4FA0-8A48-45731745E2EF">
-        <dmn:inputEntry id="_A840CFB7-37B7-4292-B1EC-200C078A97C5">
+        <dmn:inputEntry id="_02E58F9F-B42C-4814-9A29-5339D7B64661">
           <dmn:text>&lt;21</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_32A3BDA6-253C-4FD4-B69A-5761AD9BEEB8">
+        <dmn:inputEntry id="_650FE952-8A56-45F0-A2ED-A88BC041F008">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_51475535-6CFE-430B-9C43-1FEF9694C563">
+        <dmn:outputEntry id="_B164F56E-58A4-4199-9D7D-BF4847FCE6BF">
           <dmn:text>800</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -46,13 +46,13 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_DA15172F-C9DB-4710-AF35-E2D70E854C8D">
-        <dmn:inputEntry id="_63B8BCEE-0BF1-41A3-ACF3-0BFCDE143DAA">
+        <dmn:inputEntry id="_DC5ED034-A059-4AC3-BC0F-43ED296058A3">
           <dmn:text>&lt;21</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_89E2CCFC-092B-4363-9C93-15150DB901FA">
+        <dmn:inputEntry id="_C55C0891-7D56-419A-B5A4-975BBDBF926A">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_9C88EC01-ADF1-47A6-A55F-87E5ABD7D674">
+        <dmn:outputEntry id="_D7D52763-9727-400E-8440-4D80BC1424BD">
           <dmn:text>1000</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -60,13 +60,13 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_4EC2A526-DD15-4CB7-ABA7-A171D7A5A8E3">
-        <dmn:inputEntry id="_2B458AA9-3420-4AE1-A623-6702CD9B2CEB">
-          <dmn:text>&gt;=21</dmn:text>
+        <dmn:inputEntry id="_1A90DB4B-1C8C-4CD5-ADAE-F5F28E415702">
+          <dmn:text>[21 .. 49]</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_118126A6-779E-4CC4-B6C3-8A819C22801E">
+        <dmn:inputEntry id="_3B49D4A3-1C43-4A4F-B011-CE432C9DA88C">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_64FFDD44-4AAA-4640-B987-0B8D4B3A0104">
+        <dmn:outputEntry id="_5D563322-BCF4-45DC-8BA7-A292452DE5C3">
           <dmn:text>500</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -74,14 +74,42 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_E59C18CC-F23F-4C90-9B8D-BE161C604796">
-        <dmn:inputEntry id="_35025AAD-9549-4554-99BE-AC19F210CAAF">
-          <dmn:text>&gt;=21</dmn:text>
+        <dmn:inputEntry id="_98B51365-9F48-424D-A87B-0289D9BD08FB">
+          <dmn:text>[21 .. 49]</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_1FF66211-1347-47DB-8A83-C6C33E7E4C8A">
+        <dmn:inputEntry id="_1EE25452-4355-4B89-BC21-7C0E19B86F10">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_76A4D9B3-D2E6-4EBB-B7A1-558898FF9CAA">
+        <dmn:outputEntry id="_33EAC350-0A27-4CD1-8B80-B8EEC078A3AD">
           <dmn:text>600</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_3112DFE8-A59C-4D41-B68A-D41ABFB6A046">
+        <dmn:inputEntry id="_046656CD-3885-4904-8955-70DE6B63BD0E">
+          <dmn:text>&gt;=50</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_72FB0AFB-E355-4C9E-8BB7-CD05004BBFDF">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B0CE76C2-0EB5-49FB-9969-381840F4B04F">
+          <dmn:text>200</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_5D4B7209-E5D6-4FD7-ACB6-EEEB833BEDF3">
+        <dmn:inputEntry id="_931F2F08-A773-4884-A11A-60B70233ACFF">
+          <dmn:text>&gt;=50</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_6F6D24E3-9A87-4B5E-A2B7-46B29F4F1E0D">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2AD53B60-1FE3-4FA1-AFB6-8CF56AF636CE">
+          <dmn:text>300</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
